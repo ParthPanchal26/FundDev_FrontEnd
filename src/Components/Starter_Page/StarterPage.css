@@ -1,0 +1,80 @@
+.redirectBtn {
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    border: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: rgb(255, 222, 222);
+    background-color: transparent;
+    width: 295px;
+    z-index: 1;
+    transition: 0.6s;
+}
+
+.redirectBtn:hover {
+    background-color: #1e2e51;
+    color: white;
+    border: 1px solid #F7C16A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.redirectBtnleft {
+    font-size: 25px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: rgb(255, 216, 216);
+    background-color: transparent;
+    width: 295px;
+    z-index: 1;
+    text-align: center;
+    transition: 0.6s;
+}
+
+.redirectBtnleft:hover {
+    border: 1px solid #F7C16A;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 120vh;
+}
+
+.greet {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    border-radius: 15px;
+    padding: 30px 100px;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #21335A;
+    color: #FFFFFF;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #F7C16A;
+    border-left: 2px solid #F7C16A;
+    border-right: 2px solid #F7C16A;
+}
+
+.upperBox {
+    background-color: #21335A;
+    height: 23rem;
+}
+
+.lowerBox {
+    background-color: #F7C16A;
+    height: 25rem;
+}
