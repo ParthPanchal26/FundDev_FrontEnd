@@ -1,0 +1,180 @@
+.container {
+    /* border: 2px solid red; */
+    background-color: #f0f8ff;
+}
+
+.bgimg {
+    /* border: 2px solid green; */
+    height: 200px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.profileImg {
+    /* border: 2px solid blue; */
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    object-fit: cover;
+}
+
+.sections {
+    display: flex;
+    /* position: relative; */
+    /* border: 2px solid red; */
+}
+
+.leftSection {
+    margin-top: 4rem;
+    margin-inline: 3rem;
+    /* border: 2px solid green; */
+    width: 100%;
+    /* background-color: #faf9f6; */
+    padding: 5px;
+    margin-bottom: 4rem;
+}
+
+.rightSection {
+    margin-top: 4rem;
+    margin-inline: 1rem;
+    /* border: 2px solid black; */
+    border-radius: 0.3rem;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 4rem;
+}
+
+.credHeader {
+    /* border: 2px solid orange; */
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+}
+
+.name {
+    font-size: 40px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.uname {
+    margin-inline: 1rem;
+    font-size: 20px;
+}
+
+.bio {
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5rem;
+    /* border-bottom: 1px solid black; */
+}
+
+.bioContent {
+    text-align:justify;
+}
+
+.portfolio {
+    font-weight: 600;
+    /* border-bottom: 1px solid black; */
+}
+
+.portfolioLink {
+    color: blue;
+    text-decoration: none;
+}
+
+.role {
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.role .roleItem {
+    margin-right: 30px;
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 5px;
+    /* border: 2px solid #000000; */
+    border-radius: 0.3rem;
+}
+
+.subHeader {
+    /* border: 2px solid red; */
+    font-weight: 600;
+    font-size: 18px;
+    align-items: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+/* .nameHeader {
+    background-color: #f0f8ff;
+    border-radius: 0.3rem;
+    padding: 5px;
+    align-items: center;
+} */
+
+.contactHeader {
+    font-size: 25px;
+    margin: 5px ;
+    /* text-align: center; */
+}
+
+.conHeader {
+    border-bottom: 0;
+}
+
+/* .rightSection { */
+    /* border: 2px solid; */
+/* } */
+
+.right-container {
+    margin-top: 2rem;
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+.rowName {
+    padding: 5px;
+    font-size: 22px;
+    padding-inline: 1rem;
+    text-align: left;
+}
+
+
+/* 
+
+home page 
+
+-> total 3
+    
+    -> investor
+    -> devloper
+    -> entreproneor
+
+    1. Investor
+    -> notification
+    -> bookmark
+    -> filter menu, group 1(compnay, person) Theam based on automation, education, IOT, web, app, blockchain \\ short by: low to high vice versa rewie, expert choice
+    -> Ideas
+    => card
+    -> title click and send req to author
+    -> like
+    -> comment
+    -> bookmark
+    -> ratings with comment, with feedback
+    
+
+
+*/

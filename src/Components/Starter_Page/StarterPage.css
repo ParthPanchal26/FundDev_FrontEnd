@@ -1,80 +1,146 @@
-.redirectBtn {
+@import url('http://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.bodyContainer {
+    background-color: #fcfdfe;
+}
+
+.navbar {
+    background: #E3E6F3;
+    height: 100px;
+    box-shadow: 0 1px 3px rgb(96, 96, 96);
+}
+
+.navContainer {
+    margin-inline: 3rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 1rem 2rem;
     font-size: 25px;
-    font-weight: 600;
-    border-radius: 0.6rem;
-    padding: 1rem;
+    border-radius: 0.3rem;
     border: 0;
-    font-family: 'Trebuchet MS', sans-serif;
-    position: absolute;
-    top: 5%;
-    right: 5%;
-    color: rgb(255, 222, 222);
-    background-color: transparent;
-    width: 295px;
-    z-index: 1;
-    transition: 0.6s;
+    filter: drop-shadow(0 1px 1px rgb(96, 96, 96));
+    box-shadow: 0 0 3px rgb(96, 96, 96);
 }
 
-.redirectBtn:hover {
-    background-color: #1e2e51;
-    color: white;
-    border: 1px solid #F7C16A;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.redirectBtnleft {
+.btn {
+    padding: 1rem 2rem;
     font-size: 25px;
-    font-weight: 600;
+    border-radius: 0.3rem;
     border: 0;
-    border-radius: 0.6rem;
-    padding: 1rem;
-    font-family: 'Trebuchet MS', sans-serif;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    color: rgb(255, 216, 216);
-    background-color: transparent;
-    width: 295px;
-    z-index: 1;
-    text-align: center;
-    transition: 0.6s;
+    filter: drop-shadow(0 1px 1px rgb(96, 96, 96));
+    transition: 0.3s;
 }
 
-.redirectBtnleft:hover {
-    border: 1px solid #F7C16A;
-    color: white;
+.btn:hover {
+    background-color: #e4e8fa;
+    border-radius: 0.5rem;
 }
 
-.container {
+.mainSection {
+    /* border: 2px solid; */
+    margin: 1rem 1rem;
+    padding-top: 0.3rem;
+    background-color: #f8f9fa;
+}
+
+.sectionContainer {
+    /* border: 2px solid; */
+    margin: 1rem 1rem;
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 2px;
+    background-color: #e9ecef;
+}
+
+.left {
+    border: 2px solid #beccdb;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
-    position: relative;
-    height: 120vh;
+    width: 50%;
+    border-right: 0;
+    text-align: justify;
+    padding: 1rem;
+    background-color: #dee2e6;
+}
+
+.right {
+    border: 2px solid #beccdb;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: 0;
+    text-align: justify;
+    padding: 1rem;
+    background-color: #dee2e6;
+}
+
+.que {
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.que:hover {
+    filter: drop-shadow(0 0 5px #6daafa);
+}
+
+.ansBody {
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+}
+
+.ansarrow {
+    /* border: 2px solid; */
+    font-weight: 600;
+    margin-inline: 10px;
+}
+
+.ans {
+    /* border: 2px solid; */
+    padding-top: 5px;
+    transition: 0.3s;
+}
+
+.ans:hover {
+    filter: drop-shadow(0 0 5px #6daafa);
+}
+
+.rightGreet {
+    /* border: 2px solid; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .greet {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    right: 10%;
-    border-radius: 15px;
-    padding: 30px 100px;
+    font-size: 50px;
     font-weight: 600;
-    font-size: 18px;
-    background-color: #21335A;
-    color: #FFFFFF;
-    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2);
-    border-top: 2px solid #F7C16A;
-    border-left: 2px solid #F7C16A;
-    border-right: 2px solid #F7C16A;
+    transition: 0.6s;
 }
 
-.upperBox {
-    background-color: #21335A;
-    height: 23rem;
+.greet:hover {
+    filter: drop-shadow(0 0 5px #6daafa);
 }
 
-.lowerBox {
-    background-color: #F7C16A;
-    height: 25rem;
+.greetUnderline {
+    border: 2px solid;
+    width: 100%;
 }
