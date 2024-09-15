@@ -1,22 +1,20 @@
 import React, { useState } from 'react';
-import './DeveloperForm.css';
+import './EntrepreneurForm.css';
 
-const DeveloperForm = () => {
+const EntrepreneurForm = () => {
   const steps = [
+    { name: 'companyName', label: 'Company Name', type: 'text', optional: false },
+    { name: 'foundedDate', label: 'Founded Date', type: 'date', optional: false },
+    { name: 'teamSize', label: 'Team Size', type: 'number', optional: false },
+    { name: 'industry', label: 'Industry', type: 'text', optional: false },
+    { name: 'stage', label: 'Stage', type: 'select', options: ['Idea', 'Prototype', 'Early Stage', 'Growth', 'Mature'], optional: false },
+    { name: 'pitchDeck', label: 'Pitch Deck', type: 'file', optional: true },
     { name: 'bio', label: 'Bio', type: 'textarea', optional: true },
     { name: 'location', label: 'Location', type: 'text', optional: true },
     { name: 'website', label: 'Website', type: 'text', optional: true },
     { name: 'linkedin', label: 'LinkedIn', type: 'text', optional: true },
     { name: 'github', label: 'GitHub', type: 'text', optional: true },
-    { name: 'twitter', label: 'Twitter', type: 'text', optional: true },
-    { name: 'skills', label: 'Skills', type: 'text', optional: false },
-    { name: 'experience', label: 'Experience (in years)', type: 'number', optional: false },
-    { name: 'availability', label: 'Availability', type: 'select', options: ['Full-time', 'Part-time', 'Contract', 'Not Available'], optional: false },
-    { name: 'preferredRoles', label: 'Preferred Roles', type: 'select', options: ['Frontend', 'Backend', 'Full-stack', 'Mobile', 'AI/ML', 'DevOps', 'Other'], optional: false },
-    { name: 'hourlyRate', label: 'Hourly Rate ($)', type: 'number', optional: false },
-    { name: 'remote', label: 'Remote Work', type: 'checkbox', optional: false },
-    { name: 'portfolio', label: 'Portfolio (Title, Description, Link)', type: 'text', optional: true },
-    { name: 'resume', label: 'Upload Resume', type: 'file', optional: false }
+    { name: 'twitter', label: 'Twitter', type: 'text', optional: true }
   ];
 
   const [currentStep, setCurrentStep] = useState(0);
@@ -29,7 +27,7 @@ const DeveloperForm = () => {
   };
 
   const handleSubmit = () => {
-    console.log('Developer Form Submitted:', formData);
+    console.log('Entrepreneur Form Submitted:', formData);
   };
 
   const handleSkip = () => {
@@ -80,8 +78,8 @@ const DeveloperForm = () => {
   };
 
   return (
-    <div className="developer-form">
-      <h2>Developer Information</h2>
+    <div className="entrepreneur-form">
+      <h2>Entrepreneur Information</h2>
       <div className="form-step">
         <label>{steps[currentStep].label}</label>
         {renderStep()}
@@ -106,4 +104,4 @@ const DeveloperForm = () => {
   );
 };
 
-export default DeveloperForm;
+export default EntrepreneurForm;

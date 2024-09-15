@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
-import './DeveloperForm.css';
+import './InvestorForm.css';
 
-const DeveloperForm = () => {
+const InvestorForm = () => {
   const steps = [
+    { name: 'firmName', label: 'Firm Name', type: 'text', optional: false },
+    { name: 'investmentRangeMin', label: 'Investment Range (Min)', type: 'number', optional: false },
+    { name: 'investmentRangeMax', label: 'Investment Range (Max)', type: 'number', optional: false },
+    { name: 'portfolioSize', label: 'Portfolio Size', type: 'number', optional: false },
+    { name: 'preferredStages', label: 'Preferred Stages', type: 'select', options: ['Idea', 'Prototype', 'Early Stage', 'Growth', 'Mature'], optional: false },
+    { name: 'preferredIndustries', label: 'Preferred Industries', type: 'text', optional: false },
+    { name: 'investmentHistory', label: 'Investment History', type: 'textarea', optional: false }, // You can modify this for object reference if needed
     { name: 'bio', label: 'Bio', type: 'textarea', optional: true },
     { name: 'location', label: 'Location', type: 'text', optional: true },
     { name: 'website', label: 'Website', type: 'text', optional: true },
     { name: 'linkedin', label: 'LinkedIn', type: 'text', optional: true },
     { name: 'github', label: 'GitHub', type: 'text', optional: true },
-    { name: 'twitter', label: 'Twitter', type: 'text', optional: true },
-    { name: 'skills', label: 'Skills', type: 'text', optional: false },
-    { name: 'experience', label: 'Experience (in years)', type: 'number', optional: false },
-    { name: 'availability', label: 'Availability', type: 'select', options: ['Full-time', 'Part-time', 'Contract', 'Not Available'], optional: false },
-    { name: 'preferredRoles', label: 'Preferred Roles', type: 'select', options: ['Frontend', 'Backend', 'Full-stack', 'Mobile', 'AI/ML', 'DevOps', 'Other'], optional: false },
-    { name: 'hourlyRate', label: 'Hourly Rate ($)', type: 'number', optional: false },
-    { name: 'remote', label: 'Remote Work', type: 'checkbox', optional: false },
-    { name: 'portfolio', label: 'Portfolio (Title, Description, Link)', type: 'text', optional: true },
-    { name: 'resume', label: 'Upload Resume', type: 'file', optional: false }
+    { name: 'twitter', label: 'Twitter', type: 'text', optional: true }
   ];
 
   const [currentStep, setCurrentStep] = useState(0);
@@ -29,7 +28,7 @@ const DeveloperForm = () => {
   };
 
   const handleSubmit = () => {
-    console.log('Developer Form Submitted:', formData);
+    console.log('Form Submitted:', formData);
   };
 
   const handleSkip = () => {
@@ -80,8 +79,8 @@ const DeveloperForm = () => {
   };
 
   return (
-    <div className="developer-form">
-      <h2>Developer Information</h2>
+    <div className="investor-form">
+      <h2>Investor Information</h2>
       <div className="form-step">
         <label>{steps[currentStep].label}</label>
         {renderStep()}
@@ -106,4 +105,4 @@ const DeveloperForm = () => {
   );
 };
 
-export default DeveloperForm;
+export default InvestorForm;

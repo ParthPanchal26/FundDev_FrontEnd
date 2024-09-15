@@ -1,0 +1,88 @@
+.investor-form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .investor-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-step {
+    margin-bottom: 20px;
+  }
+  
+  .form-step label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .form-step input,
+  .form-step textarea,
+  .form-step select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .form-step textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 48%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-buttons button:nth-child(1) {
+    background-color: #6c757d;
+  }
+  
+  .form-buttons button:nth-child(1):hover {
+    background-color: #5a6268;
+  }
+  
+  .progress-bar {
+    margin-top: 20px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 8px;
+    width: 100%;
+  }
+  
+  .progress-bar .progress {
+    background-color: #007bff;
+    height: 100%;
+    width: 0;
+    transition: width 0.3s ease;
+  }
+  

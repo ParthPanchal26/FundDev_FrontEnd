@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 
-function Signup() {
+function Signup() {    
     const [firstname, setFirstname] = useState('');
     const [lastname, setLastname] = useState('');
     const [username, setUsername] = useState('');
@@ -14,11 +14,11 @@ function Signup() {
     const handleSubmit = (e) => {
         e.preventDefault();
         axios.post("http://localhost:3001/register", { firstname, lastname, username, email, password })
-            .then(result => {
-                console.log(result);
-                navigate("/login");
-            })
-            .catch(err => console.log(err));
+        .then(result => {
+            console.log(result);
+            navigate("/login");
+        })
+        .catch(err => console.log(err));
     }
 
     return (
@@ -31,11 +31,11 @@ function Signup() {
                         <label htmlFor="firstname">
                             <strong>First Name</strong>
                         </label>
-                        <input
-                            type="text"
-                            placeholder='Enter First Name'
-                            autoComplete='off'
-                            name='firstname'
+                        <input 
+                            type="text" 
+                            placeholder='Enter First Name' 
+                            autoComplete='off' 
+                            name='firstname' 
                             className='form-control rounded-0'
                             onChange={(e) => setFirstname(e.target.value)}
                             value={firstname}
@@ -46,11 +46,11 @@ function Signup() {
                         <label htmlFor="lastname">
                             <strong>Last Name</strong>
                         </label>
-                        <input
-                            type="text"
-                            placeholder='Enter Last Name'
-                            autoComplete='off'
-                            name='lastname'
+                        <input 
+                            type="text" 
+                            placeholder='Enter Last Name' 
+                            autoComplete='off' 
+                            name='lastname' 
                             className='form-control rounded-0'
                             onChange={(e) => setLastname(e.target.value)}
                             value={lastname}
@@ -61,11 +61,11 @@ function Signup() {
                         <label htmlFor="username">
                             <strong>Username</strong>
                         </label>
-                        <input
-                            type="text"
-                            placeholder='Enter Username'
-                            autoComplete='off'
-                            name='username'
+                        <input 
+                            type="text" 
+                            placeholder='Enter Username' 
+                            autoComplete='off' 
+                            name='username' 
                             className='form-control rounded-0'
                             onChange={(e) => setUsername(e.target.value)}
                             value={username}
@@ -76,12 +76,12 @@ function Signup() {
                         <label htmlFor="email">
                             <strong>Email</strong>
                         </label>
-                        <input
-                            type="email"
-                            placeholder='Enter Email'
-                            autoComplete='off'
-                            name='email'
-                            className='form-control rounded-0'
+                        <input 
+                            type="email" 
+                            placeholder='Enter Email' 
+                            autoComplete='off' 
+                            name='email' 
+                            className='form-control rounded-0' 
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
                             required
@@ -91,11 +91,11 @@ function Signup() {
                         <label htmlFor="password">
                             <strong>Password</strong>
                         </label>
-                        <input
-                            type="password"
-                            placeholder='Enter Password'
-                            name='password'
-                            className='form-control rounded-0'
+                        <input 
+                            type="password" 
+                            placeholder='Enter Password' 
+                            name='password' 
+                            className='form-control rounded-0' 
                             onChange={(e) => setPassword(e.target.value)}
                             value={password}
                             required
