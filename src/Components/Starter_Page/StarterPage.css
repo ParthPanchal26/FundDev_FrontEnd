@@ -9,6 +9,142 @@
     background-color: #fcfdfe;
 }
 
+.navbarMain {
+    background: #E3E6F3;
+    height: 100px;
+    box-shadow: 0 1px 3px rgb(96, 96, 96);
+}
+
+.navContainer {
+    margin-inline: 3rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    padding: 1rem 2rem;
+    font-size: 25px;
+    border-radius: 0.3rem;
+    border: 0;
+    filter: drop-shadow(0 1px 1px rgb(96, 96, 96));
+    box-shadow: 0 0 3px rgb(96, 96, 96);
+}
+
+.btnright {
+    padding: 1rem 2rem;
+    font-size: 25px;
+    border-radius: 0.3rem;
+    border: 0;
+    filter: drop-shadow(0 1px 1px rgb(96, 96, 96));
+    transition: 0.3s;
+}
+
+.btnright:hover {
+    background-color: #e4e8fa;
+    border-radius: 0.5rem;
+}
+
+.mainSection {
+    /* border: 2px solid; */
+    margin: 1rem 1rem;
+    padding-top: 0.3rem;
+    background-color: #f8f9fa;
+}
+
+.sectionContainer {
+    /* border: 2px solid; */
+    margin: 1rem 1rem;
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 2px;
+    background-color: #e9ecef;
+}
+
+.left {
+    border: 2px solid #beccdb;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-right: 0;
+    text-align: justify;
+    padding: 1rem;
+    background-color: #dee2e6;
+}
+
+.right {
+    border: 2px solid #beccdb;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border-left: 0;
+    text-align: justify;
+    padding: 1rem;
+    background-color: #dee2e6;
+}
+
+.que {
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.que:hover {
+    filter: drop-shadow(0 0 5px #6daafa);
+}
+
+.ansBody {
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+}
+
+.ansarrow {
+    /* border: 2px solid; */
+    font-weight: 600;
+    margin-inline: 10px;
+}
+
+.ans {
+    /* border: 2px solid; */
+    padding-top: 5px;
+    transition: 0.3s;
+}
+
+.ans:hover {
+    filter: drop-shadow(0 0 5px #6daafa);
+}
+
+.rightGreet {
+    /* border: 2px solid; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.greet {
+    font-size: 50px;
+    font-weight: 600;
+    transition: 0.6s;
+}
+
+.greet:hover {
+    filter: drop-shadow(0 0 5px #6daafa);
+}
+
+.greetUnderline {
+    border: 2px solid;
+    width: 100%;
+}
+
 .navbar {
     background: #E3E6F3;
     height: 100px;

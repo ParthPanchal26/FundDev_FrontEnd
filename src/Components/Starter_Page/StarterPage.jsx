@@ -1,8 +1,7 @@
-import React from 'react'
-import './StarterPage.css'
+import React from 'react';
+import './StarterPage.css';  // Adjusted path for styles
 
 const StarterPage = () => {
-
 
     let questions = ["1. What is our mission? ", "2. Who are we?", "3. What do we offer?", "4. How does it work?", "5. Why choose us?", "6. Who can join?"];
 
@@ -12,13 +11,12 @@ const StarterPage = () => {
         <>
             <div className="bodyContainer">
 
-                <nav className="navbar">
+                <nav className="navbarMain">
                     <div className="navContainer">
                         <div className="logo">LOGO</div>
-                        <button className="btn">Get Started</button>
+                        <button className="btnright">Get Started</button>
                     </div>
                 </nav>
-
 
                 <section className="mainSection">
 
@@ -35,6 +33,7 @@ const StarterPage = () => {
                                     </div>
                                 </div>
                             ))}
+
                         </section>
 
                         <section className="right">
@@ -52,7 +51,7 @@ const StarterPage = () => {
 
             </div>
         </>
-    )
+    );
 }
 
-export default StarterPage
+export default StarterPage;

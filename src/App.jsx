@@ -1,11 +1,9 @@
 import React from 'react'
-// import Dev_Dashboard from './Components/Dev_Dashboard/Dev_Dashboard'
-import StarterPage from './Components/Starter_Page/StarterPage'
+import Layout from './Layout'
 
 const App = () => {
   return (
-    // <Dev_Dashboard />
-    <StarterPage />
+    <Layout />
   )
 }
 
