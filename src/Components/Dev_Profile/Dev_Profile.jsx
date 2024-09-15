@@ -1,5 +1,5 @@
 import React from 'react'
-import './Dev_Dashboard.css'
+import './Dev_Profile.css.css'
 
 const Dev_Dashboard = () => {
     return (
